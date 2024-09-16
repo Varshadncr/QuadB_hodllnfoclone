@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+/* Default dark mode styles */
+html, body {
+    background-color: #191d28;
+    color: #ffffff;
+}
+
+.navbar-cust {
+    background-color: #191d28;
+}
+
+.table-alter {
+    background-color: #191d28;
+}
+
+.table-alter thead tr th {
+    color: #818389;
+}
+
+.table-alter tbody tr {
+    background-color: #2e3241;
+}
+
+.table-alter .negative {
+    color: red;
+}
+
+.table-alter .positive {
+    color: green;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .navbar-cust {
+    background-color: #ffffff;
+}
+
+body.light-mode .table-alter {
+    background-color: #ffffff;
+}
+
+body.light-mode .table-alter thead tr th {
+    color: #000000;
+}
+
+body.light-mode .table-alter tbody tr {
+    background-color: #f0f0f0;
+}
+
+body.light-mode .table-alter .negative {
+    color: red;
+}
+
+body.light-mode .table-alter .positive {
+    color: green;
+}
+
+/* Navbar styles */
+.navbar-cust {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-logo {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6ccacb;
+}
+
+.site-name {
+    font-size: 4rem;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-middle {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.navbar-button {
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    background: #2e3241;
+    padding: 10px 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background: #545b62;
+    text-decoration: none;
+}
+
+.navbar-button-contact {
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1rem;
+    background: #3dc6c1;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-end {
+    float: right;
+    padding: 15px;
+}
+
+.theme-toggle-align {
+    padding-left: 130px;
+}
+
+/* Theme toggle button style */
+.custom-control.teleport-switch {
+    --color: #4cd964;
+    padding-left: 0;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input {
+    display: none;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator {
+    border-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::after {
+    left: -14px;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked ~ .teleport-switch-control-indicator::before {
+    right: 2px;
+    background-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:disabled ~ .teleport-switch-control-indicator {
+    opacity: .4;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    top: 4px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    transition: .3s;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: .3s;
+    top: 2px;
+    left: 2px;
+    background: #ccc;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: .3s;
+    top: 2px;
+    right: -14px;
+    background: #ccc;
+}
+
+/* Table styles */
+.table-alter {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    margin: 0;
+    color: #212529;
+    padding-bottom: 20px;
+}
+
+table {
+    display: table;
+    border-color: gray;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+thead tr th {
+    padding: 8px;
+    text-align: left;
+}
+
+tr td {
+    padding: 8px;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #2e3241;
+}
+
+.negative {
+    color: red;
+}
+
+.positive {
+    color: green;
+}
+
+/* Details container styles */
+.details-container {
+    padding: 30px;
+}
+
+.small-header {
+    padding: 10px 0px;
+}
+
+.center-div {
+    font-size: 1.6em;
+}
+
+.small-header-percentage {
+    color: green;
+}
+
+.small-header-time {
+    color: #65686f;
+    font-size: 1.3rem;
+}
+
+.center-block {
+    max-width: 40%;
+}
+
+.center-text {
+    color: #65686f;
+    font-size: 1.6rem;
+}
+
+.amount {
+    padding: 10px;
+    font-size: 4rem;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2e3241;
+    color: #ffffff;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: #4dc6c1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+.instruction-box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+/* Floating Button Styles */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid #76c7c0;
+    color: #76c7c0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    
+}
+.floating-btn:hover {
+    background-color: rgba(118, 199, 192, 0.1);
+    text-decoration: none;
+}
+ /* Hide the dropdown menu by default */
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    background-color: #2e3241;
+    border: 1px solid #545b62;
+    border-radius: 0.25rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scaleY(0); /* Scale down to zero height */
+    transform-origin: top; /* Ensure scaling starts from the top */
+    overflow: hidden;
+    opacity: 0; /* Invisible initially */
+}
+
+/* Show the dropdown when active */
+.dropdown-menu.show {
+    display: block;
+    transform: scaleY(1); /* Scale up to full height */
+    opacity: 1; /* Fully visible */
+}
+
+/* Dropdown item styles */
+.dropdown-item {
+    color: #ffffff;
+    background-color: #2e3241;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block; /* Ensure the item takes the full width of the dropdown */
+}
+
+/* Change background color on hover */
+.dropdown-item:hover {
+    background-color: #3dc6c1;
+}
+
+        .theme-toggle {
+            color: #76c7c0;
+        }
