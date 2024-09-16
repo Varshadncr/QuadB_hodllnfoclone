@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css"> <!-- Ensure this CSS file styles the page appropriately -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Connect with Telegram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark theme default */
+            color: #e0e0e0;
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .instruction-box {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #76c7c0;
+        }
+        a {
+            color: #76c7c0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #76c7c0;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #121212;
+            padding: 10px;
+        }
+        .navbar-logo {
+            color: #76c7c0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .theme-toggle {
+            color: #76c7c0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-logo" href="/">HODLINFO</a>
+            <div class="d-flex justify-content-end">
+                <label class="custom-control teleport-switch">
+                    <span class="teleport-switch-control-description material-symbols-outlined">
+                        light_mode
+                    </span>
+                    <input type="checkbox" class="teleport-switch-control-input" checked="">
+                    <span class="teleport-switch-control-indicator"></span>
+                    <span class="teleport-switch-control-description material-symbols-outlined">
+                        dark_mode
+                    </span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <h1 class="my-4">Connect with Telegram</h1>
+        <div class="instruction-box">
+            <h2>Add Bot to Your Group</h2>
+            <p><strong>Manual:</strong></p>
+            <ol>
+                <li>Open the Telegram app.</li>
+                <li>Open the group you want to add the bot to.</li>
+                <li>Click on "Add members" in group settings.</li>
+                <li>Search <strong>@HodlInfoBot</strong> and click it.</li>
+            </ol>
+            <p><strong>Automatic:</strong></p>
+            <p>Go to: <a href="https://t.me/HodlInfoBot?startgroup=true" target="_blank">https://t.me/HodlInfoBot?startgroup=true</a></p>
+            
+            <h2>Chat with the Bot</h2>
+            <p><strong>Manual:</strong></p>
+            <ol>
+                <li>Open the Telegram app.</li>
+                <li>Click on the new message button.</li>
+                <li>In the search bar, type <strong>@HodlInfoBot</strong>.</li>
+                <li>Click on <strong>@HodlInfoBot</strong>.</li>
+            </ol>
+        </div>
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const toggleSwitch = document.querySelector('.teleport-switch-control-input');
+
+        // Check for saved user preference
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        document.body.classList.toggle('light-mode', currentTheme === 'light');
+        toggleSwitch.checked = (currentTheme === 'light');
+
+        // Toggle theme on switch change
+        toggleSwitch.addEventListener('change', () => {
+            const isLightMode = toggleSwitch.checked;
+            document.body.classList.toggle('light-mode', isLightMode);
+            localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+        });
+    });
+    </script>
+</body>
+
+</html>
