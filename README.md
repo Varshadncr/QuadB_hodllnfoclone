@@ -86,7 +86,7 @@ In the root of the project, initialize a Node.js project:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hodlinfo_clone.git
+   git clone (https://github.com/Varshadncr/QuadB_hodllnfoclone.git)
    ```
 2. Navigate to the project directory:
    ```bash
